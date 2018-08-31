@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>关于Vue最最最基本的东西 · hello-me</title>
+    <title>create-react-app脚手架  · hello-me</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -210,7 +210,7 @@
                 <a href="/" >Do Better</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">关于Vue最最最基本的东西</a>
+                <a href="#" class="post-name">create-react-app脚手架 </a>
             </div>
     </div>
     
@@ -242,7 +242,7 @@ height:20vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            关于Vue最最最基本的东西
+            create-react-app脚手架 
             <!-- 404 -->
             
         </h1>
@@ -261,18 +261,18 @@ height:20vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Vue">Vue</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "React Yarn">React Yarn</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count">1,117</span> / Reading time: <span class="post-count">5 min</span></span>
+                        <span>Word count: <span class="post-count">555</span> / Reading time: <span class="post-count">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2018/07/06</span>
+                    <span class="post-intro-time">2018/08/31</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -396,35 +396,34 @@ height:20vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="关于vue-js最基本的知识点"><a href="#关于vue-js最基本的知识点" class="headerlink" title="关于vue.js最基本的知识点"></a>关于vue.js最基本的知识点</h3><h4 id="Vue是什么"><a href="#Vue是什么" class="headerlink" title="Vue是什么"></a>Vue是什么</h4><p>   Vue是一个轻量级的前端界面框架，实现数据渲染/数据同步，组件化/模块化，路由，ajax, 数据流等功能。</p>
-<h4 id="Vue的特点"><a href="#Vue的特点" class="headerlink" title="Vue的特点"></a>Vue的特点</h4><p>   双向数据绑定，components注册组件，（webpack+vue-loader Browserify + vueify）打包工具将.vue文件解析成浏览器能识别的文件。<br>   webpack是一个现代的JavaScript应用模块打包器（module bundler），它能把各种资源，例如JS（含JSX）、coffee、样式（less/sass）、图片等都作为模块来处理和使用。它有着难以置信的配置和神奇的效果，大大提高了我们程序员的工作效率</p>
-<h4 id="生命周期："><a href="#生命周期：" class="headerlink" title="生命周期："></a>生命周期：</h4><p>   一个组件或者实例对象在不同的阶段，vue.js提供不同的钩子，通过这些钩子在特定的阶段执行一些特定的操作<br>   <img src="/2018/07/06/关于Vue最最最基本的东西/l.jpg" alt="Vue生命周期图"></p>
-<h4 id="一些基本知识"><a href="#一些基本知识" class="headerlink" title="一些基本知识"></a>一些基本知识</h4><h5 id="v-text-与-v-html的区别"><a href="#v-text-与-v-html的区别" class="headerlink" title="v-text 与 v-html的区别"></a>v-text 与 v-html的区别</h5><p>   v-text: 会把html的标签输出<br>   v-html: 不会把html的标签输出<br>   比如：<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;h1 v-html=&quot;title&quot;&gt;&lt;/h1&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  data:function()&#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      title:&quot;&lt;span&gt;hello world&lt;/span&gt;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">使用v-html会输出：hello world</span><br><span class="line">使用v-text会输出：&lt;span&gt;hello world&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
-<h5 id="v-if-与-v-show的区别"><a href="#v-if-与-v-show的区别" class="headerlink" title="v-if 与 v-show的区别"></a>v-if 与 v-show的区别</h5><p>   v-if 当值为 true时，显示元素 ，当值为false时，该元素消失，代码也会消失，相当于将代码在文档流里删除了，当在为true时，页面会重新渲染该元素;<br>   v-show 是控制的隐藏出现，只是将css属性设为了display：none 或block;</p>
-<h5 id="三种组件之间交互的方式"><a href="#三种组件之间交互的方式" class="headerlink" title="三种组件之间交互的方式"></a>三种组件之间交互的方式</h5><p>   1.通过属性向内传递props;<br>   2.子组件，通过this.$emit(‘function’, params)触发一个事件，父组件通过监听事件来得到子组件的信息;<br>   3.slot插槽，写在父组件的模板通过插槽展现在子组件内(默认slot，具名slot);<br>   例如：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">子组件</span><br><span class="line"> &lt;slot name=&quot;header&quot;&gt;&lt;/slot&gt;</span><br><span class="line"> &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line"> 父组件</span><br><span class="line"> &lt;p slot=&quot;header&quot;&gt;header&lt;/p&gt;</span><br><span class="line"> &lt;p&gt;hello world&lt;/p&gt;</span><br><span class="line"> 渲染结果</span><br><span class="line"> &lt;p&gt;header&lt;/p&gt;</span><br><span class="line"> &lt;p&gt;hello world&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
-<h5 id="VUE自定义指令"><a href="#VUE自定义指令" class="headerlink" title="VUE自定义指令"></a>VUE自定义指令</h5><p>   1.全局的自定义指令<br>   2.局部的自定义指令</p>
-<h6 id="全局的注册方式"><a href="#全局的注册方式" class="headerlink" title="全局的注册方式"></a>全局的注册方式</h6><pre><code>通过 Vue.directive( id, [definition] ) 方式注册全局指令，第一个参数为自定义指令名称（指令名称不需要加 v- 前缀，默认是自动加上前缀的，使用指令的时候一定要加上前缀），第二个参数可以是对象数据，也可以是一个指令函数。
-例如：
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;p v-color=&quot;red&quot;&gt;全局注册自定义指令&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    Vue.directive(&quot;color&quot;, &#123;</span><br><span class="line">        inserted: function(el, binding)&#123;</span><br><span class="line">            el.style.color = binding.value</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    new Vue(&#123;</span><br><span class="line">        el: &quot;#app&quot;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</code></pre><h6 id="局部注册"><a href="#局部注册" class="headerlink" title="局部注册"></a>局部注册</h6><pre><code>通过在Vue实例中添加 directives 对象数据注册局部自定义指令
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;p v-color=&quot;red&quot;&gt;局部注册自定义指令&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;scritpt&gt;</span><br><span class="line">  directives: &#123;</span><br><span class="line">  color: &#123;</span><br><span class="line">   inserted: function (el, binding) &#123;</span><br><span class="line">  el.style.color = binding.value</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  &lt;/scritpt&gt;</span><br></pre></td></tr></table></figure>
-</code></pre><h6 id="钩子函数"><a href="#钩子函数" class="headerlink" title="钩子函数"></a>钩子函数</h6><p>   .el：指令所绑定的元素，可以用来操作DOM<br>   .binding： 绑定的一些变量，是一个对象，有很多属性<br>   .inserted：被绑定元素插入父节点时调用 (仅保证父节点存在，但不一定已被插入文档中)<br>   .update：所在组件的 VNode 更新时调用，但是可能发生在其子 VNode 更新之前。指令的值可能发生了改变，也可能没有。但是你可以通过比较更新前后的值来忽略不必要的模板更新<br>   .componentUpdated：指令所在组件的 VNode 及其子 VNode 全部更新后调用<br>   .unbind：只调用一次，指令与元素解绑时调用,用来解除监听事件的。<br>   <a href="https://cn.vuejs.org/v2/guide/custom-directive.html" target="_blank" rel="noopener">具体的可以看官网自定义指令</a> </p>
-<h4 id="初始化一个Vue项目"><a href="#初始化一个Vue项目" class="headerlink" title="初始化一个Vue项目"></a>初始化一个Vue项目</h4><p>   vue-cli 是Vue官方提供的脚手架工具</p>
-<h6 id="vue-cli使用流程"><a href="#vue-cli使用流程" class="headerlink" title="vue-cli使用流程"></a>vue-cli使用流程</h6><p>   <img src="/2018/07/06/关于Vue最最最基本的东西/2.png" alt=""></p>
-<h6 id="使用vue-cli的优势"><a href="#使用vue-cli的优势" class="headerlink" title="使用vue-cli的优势"></a>使用vue-cli的优势</h6><p>   .成熟的VUE项目架构设计1<br>   .提供本地测试服务器<br>   .集成打包上线</p>
-<h6 id="使用vue-cli的系统要求"><a href="#使用vue-cli的系统要求" class="headerlink" title="使用vue-cli的系统要求"></a>使用vue-cli的系统要求</h6><p>   .Node.js(&gt;=4.0版本) 一个强大的JavaScript运行环境<br>   .Git<br>   . 一个能使用node的命令行终端</p>
-<h6 id="安装vue-cli"><a href="#安装vue-cli" class="headerlink" title="安装vue-cli"></a>安装vue-cli</h6><blockquote>
-<p>npm install vue-cli -g 全局的安装vue-cli<br>vue init webpack vueproject 创建项目，vueproject是项目名称，自己取</p>
+        <h3 id="React-介绍"><a href="#React-介绍" class="headerlink" title="React 介绍"></a>React 介绍</h3><p> React是Facebook研发的一款前端框架(MVC框架: 侧重于view层操作)，目前被广泛使用</p>
+<h3 id="React脚手架create-react-app介绍"><a href="#React脚手架create-react-app介绍" class="headerlink" title="React脚手架create-react-app介绍"></a>React脚手架create-react-app介绍</h3><p> 为了快速地进行构建使用 React 的项目，FaceBook 官方发布了个无需配置的、用于快速构建开发环境的脚手架工具 create-react-app<br> create-react-app所创建的应用入口文件是src/index.js文件。</p>
+<h4 id="使用原因以及特性"><a href="#使用原因以及特性" class="headerlink" title="使用原因以及特性:"></a>使用原因以及特性:</h4><p> .无需配置<br> .集成了对React, JSX, ES6和Flow的支持；<br> .集成了开发服务器；<br> .配置好了浏览器的热加载的功能;<br> .在javaScript中可以直接使用import CSS和图片;<br> .自动处理CSS的兼容问题，无需添加-webkit前缀;<br> .集成好了编译命令，编译后直接可以发布成产品，并且还包含了sourcemaps。</p>
+<h4 id="安装和使用create-react-app"><a href="#安装和使用create-react-app" class="headerlink" title="安装和使用create-react-app"></a>安装和使用create-react-app</h4><blockquote>
+<p>npm install -g create-react-app //注意需要添加 g 参数进行全局安装以及权限的问题<br>create-react-app my-app // my-app 就是你项目的名称<br>cd my-app<br>npm start</p>
 </blockquote>
-<p>   命令输入后，会进入安装阶段，需要输入一些信息<br>    <img src="/2018/07/06/关于Vue最最最基本的东西/3.png" alt="如图示例"></p>
+<p> 在使用create-react-app脚手架的过程中要注意确保你的电脑上Node版本大于等于4。</p>
+<h4 id="关于yarn"><a href="#关于yarn" class="headerlink" title="关于yarn"></a>关于yarn</h4><p> 在初始化项目时我们需要npm install,或者在安装一些插件的时候需要用到npm,<br> 但是npm install 很慢，而且在开发项目要添加依赖的时候，用 npm 拉取依赖时，即使用的是相同的 package.json，在不同的设备上拉到的 packages 版本不一，这就可能为项目引入 bug<br> 为了防止拉取到不同的版本，Yarn 有一个锁定文件 (lock file) 记录了被确切安装上的模块的版本号。每次只要新增了一个模块，Yarn 就会创建（或更新）yarn.lock 这个文件。这么做就保证了，每一次拉取同一个项目依赖时，使用的都是一样的模块版本。<br> 所以用yarn可以减少bug，加快安装依赖的速度。</p>
+<p> #####什么是Yarn</p>
+<ul>
+<li>Yarn 是新一代包管理工具<br>为什么使用Yarn</li>
+<li>速度快</li>
+<li>安装版本统一，更安全</li>
+<li>更简洁的输出</li>
+<li>更好的语义化<br>如何使用Yarn</li>
+<li>yarn init</li>
+<li>yarn add</li>
+<li>yarn remove</li>
+<li>yarn install</li>
+</ul>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者: <a href="http://yoursite.com">Me</a>
-            <p>原文链接: <a href="http://yoursite.com/2018/07/06/关于Vue最最最基本的东西/">http://yoursite.com/2018/07/06/关于Vue最最最基本的东西/</a>
-            <p>发表日期: <a href="http://yoursite.com/2018/07/06/关于Vue最最最基本的东西/">July 6th 2018, 3:54:03</a>
+            <p>原文链接: <a href="http://yoursite.com/2018/08/31/react-基础知识/">http://yoursite.com/2018/08/31/react-基础知识/</a>
+            <p>发表日期: <a href="http://yoursite.com/2018/08/31/react-基础知识/">八月 31日 2018, 1:24:51</a>
             <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -432,17 +431,12 @@ height:20vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2018/08/31/react-基础知识/" title= create-react-app脚手架  >
-                    <div class="nextTitle">create-react-app脚手架 </div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2018/06/28/时间格式转来转去/" title= 时间格式转来转去 >
-                    <div class="prevTitle">时间格式转来转去</div>
+                <a href= "/2018/07/06/关于Vue最最最基本的东西/" title= 关于Vue最最最基本的东西 >
+                    <div class="prevTitle">关于Vue最最最基本的东西</div>
                 </a>
             
         </li>
@@ -549,7 +543,7 @@ top:20vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于vue-js最基本的知识点"><span class="toc-number">1.</span> <span class="toc-text">关于vue.js最基本的知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Vue是什么"><span class="toc-number">1.1.</span> <span class="toc-text">Vue是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vue的特点"><span class="toc-number">1.2.</span> <span class="toc-text">Vue的特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生命周期："><span class="toc-number">1.3.</span> <span class="toc-text">生命周期：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一些基本知识"><span class="toc-number">1.4.</span> <span class="toc-text">一些基本知识</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#v-text-与-v-html的区别"><span class="toc-number">1.4.1.</span> <span class="toc-text">v-text 与 v-html的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-if-与-v-show的区别"><span class="toc-number">1.4.2.</span> <span class="toc-text">v-if 与 v-show的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#三种组件之间交互的方式"><span class="toc-number">1.4.3.</span> <span class="toc-text">三种组件之间交互的方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#VUE自定义指令"><span class="toc-number">1.4.4.</span> <span class="toc-text">VUE自定义指令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#全局的注册方式"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">全局的注册方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#局部注册"><span class="toc-number">1.4.4.2.</span> <span class="toc-text">局部注册</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#钩子函数"><span class="toc-number">1.4.4.3.</span> <span class="toc-text">钩子函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#初始化一个Vue项目"><span class="toc-number">1.5.</span> <span class="toc-text">初始化一个Vue项目</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#vue-cli使用流程"><span class="toc-number">1.5.0.1.</span> <span class="toc-text">vue-cli使用流程</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#使用vue-cli的优势"><span class="toc-number">1.5.0.2.</span> <span class="toc-text">使用vue-cli的优势</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#使用vue-cli的系统要求"><span class="toc-number">1.5.0.3.</span> <span class="toc-text">使用vue-cli的系统要求</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#安装vue-cli"><span class="toc-number">1.5.0.4.</span> <span class="toc-text">安装vue-cli</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#React-介绍"><span class="toc-number">1.</span> <span class="toc-text">React 介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#React脚手架create-react-app介绍"><span class="toc-number">2.</span> <span class="toc-text">React脚手架create-react-app介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用原因以及特性"><span class="toc-number">2.1.</span> <span class="toc-text">使用原因以及特性:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装和使用create-react-app"><span class="toc-number">2.2.</span> <span class="toc-text">安装和使用create-react-app</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关于yarn"><span class="toc-number">2.3.</span> <span class="toc-text">关于yarn</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
