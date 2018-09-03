@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>用GitHub和Hexo搭建个人的博客 · hello-me</title>
+    <title>react生命周期  · hello-me</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -210,7 +210,7 @@
                 <a href="/" >Do Better</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">用GitHub和Hexo搭建个人的博客</a>
+                <a href="#" class="post-name">react生命周期 </a>
             </div>
     </div>
     
@@ -242,7 +242,7 @@ height:20vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            用GitHub和Hexo搭建个人的博客
+            react生命周期 
             <!-- 404 -->
             
         </h1>
@@ -261,18 +261,18 @@ height:20vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "GitHub   Hexo">GitHub   Hexo</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "React">React</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count">1,055</span> / Reading time: <span class="post-count">4 min</span></span>
+                        <span>Word count: <span class="post-count">977</span> / Reading time: <span class="post-count">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2018/06/15</span>
+                    <span class="post-intro-time">2018/08/31</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -396,76 +396,50 @@ height:20vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>  好记性不如敲键盘</p>
-<h4 id="关于GitHub："><a href="#关于GitHub：" class="headerlink" title="关于GitHub："></a>关于GitHub：</h4><p>  .GitHub 是基于Git实现的代码托管。是世界最大的”开源”社区，我们的博客就是依托于GitHub，GitHub可以给你一个二级免费域名，这就是我们的博客。</p>
-<h4 id="关于Hexo："><a href="#关于Hexo：" class="headerlink" title="关于Hexo："></a>关于Hexo：</h4><p>  .Hexo 是一个快速，简洁且高效的博客框架。在本地电脑上写了文章，然后就可以通过hexo命令来发布文章啦。</p>
-<h2 id="安装环境与工具："><a href="#安装环境与工具：" class="headerlink" title="安装环境与工具："></a>安装环境与工具：</h2><p>  .<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">安装Node.js</a>下载安装你对应系统的即可，最新的node.js在安装的过程中会自动配置你的环境变量.<br>  .<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">安装Git</a> 下载完成，在命令行输入git version 有输入版本说明安装成功.</p>
-<h4 id="Git的基本操作"><a href="#Git的基本操作" class="headerlink" title="Git的基本操作"></a>Git的基本操作</h4><p>  .git clone: 将远程仓库复制到本地： git clone 项目地址<br>  .git init: 新建一个仓库<br>  .git pull: 抓取远程仓库所有分支更新并合并本地<br>  .git add: 跟踪新文件： git add 文件名/文件夹名<br>  .git commit: 提交你的修改： git commit -m “注释”<br>  .git push: 推送你本地仓库的更新到远程仓库git push[远程名][本地分支]:[远程分支]</p>
-<h4 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h4><p>   点击左下角开始在程序中找到Git Base<br>     <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/Git_Base.png" alt="图片"></p>
-<blockquote>
-<p>npm install hexo-cli -g<br>npm install hexo-deployer-git –save</p>
-</blockquote>
-<p>   如下图表示完成<br>     <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/2.png" alt="图片"></p>
-<h4 id="Hexo初始化配置"><a href="#Hexo初始化配置" class="headerlink" title="Hexo初始化配置"></a>Hexo初始化配置</h4><p>   首先创建Hexo文件夹(D\Hexo)进入文件夹点击鼠标右键，选择Git Bash Here，输入</p>
-<blockquote>
-<p>hexo init</p>
-</blockquote>
-<p>   Hexo目录如下<br>   <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/3.png" alt="图片"><br>    执行以下命令，就可以在本地查看效果了</p>
-<blockquote>
-<p>hexo generate<br>hexo server</p>
-</blockquote>
-<h4 id="登录GitHub账号新建仓库"><a href="#登录GitHub账号新建仓库" class="headerlink" title="登录GitHub账号新建仓库"></a>登录GitHub账号新建仓库</h4><p>   登录完成后，就可以新建<a href="https://github.com/new" target="_blank" rel="noopener">(Repository)仓库</a>了，<br>    <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/4.png" alt="图片"><br>    tip：项目的名字必须是：username.github.io，里面的username和你github账号的username一致，大小写不要紧<br>    点击确定，就可以创建成功了。</p>
-<h4 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置SSH密钥</h4><p>   1.先检查一下本机是不是存在SSH keys.打开Git Bash</p>
-<blockquote>
-<p>cd ~/. ssh</p>
-</blockquote>
-<p>   2.不存在这个目录就要创建一对SSH秘钥了。输入以下命令就可以创建了(存在的话可以直接进行第三步)</p>
-<blockquote>
-<p>ssh-keygen -t rsa -C “<a href="mailto:your_email@example.com" target="_blank" rel="noopener">your_email@example.com</a>“</p>
-</blockquote>
-<p>   接着根据提示需要输入密码和确认密码，可以不输密码直接回车的<br>    输入完成后会有提示信息。<br>   3.然后运行以下命令，将公钥内容复制刀粘贴板上</p>
-<blockquote>
-<p>clip &lt; ~/.ssh/id_rsa.pub</p>
-</blockquote>
-<p>   登录GitHub，点击头像进去 <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/5.png" alt="图片"><br>   选择  <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/6.png" alt="图片"> 然后点击New SSH Key <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/8.png" alt="图片"><br>   粘贴密钥 <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/7.png" alt="图片"><br>   点击添加即可<br>   4.输入下面命令，看看是否成功(git@github这部分不要修改)</p>
-<blockquote>
-<p> ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
-</blockquote>
-<p>   如果是这样子记得输入yes，不是y <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/9.png" alt="图片"><br>   输入yes后看到 <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/10.png" alt="图片">就成功啦<br>   5.现在已经可以通过SSH链接到GitHub了，还要完善一些个人信息</p>
-<blockquote>
-<p>git config –global user.name “hello-me”//用户名(自己起的)<br>git config –global user.email  “<a href="mailto:hello_world321@sina.com" target="_blank" rel="noopener">hello_world321@sina.com</a>“//填写自己的邮箱</p>
-</blockquote>
-<h4 id="将本地的Hexo文件更新到Github的库中"><a href="#将本地的Hexo文件更新到Github的库中" class="headerlink" title="将本地的Hexo文件更新到Github的库中"></a>将本地的Hexo文件更新到Github的库中</h4><p>   登录GitHub 打开自己开始建的的项目 username.github.io,然后如图所示操作，记得是Clone with SSH<br>   <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/11.png" alt="图片"><br>   1.打开开始创建的Hexo文件夹，用webstrom或者其他编辑器打开 _config.yml文件<br>    找到deploy: 字段,如图进行修改<br>    <img src="/2018/06/15/用GitHub和Hexo搭建个人博客/12.png" alt="图片"><br>   2.在Hexo文件下执行</p>
-<blockquote>
-<p>hexo g -d</p>
-</blockquote>
-<p>   3.在游览器上输入自己的博客地址即可查看</p>
-<h2 id="美化自己的博客"><a href="#美化自己的博客" class="headerlink" title="美化自己的博客"></a>美化自己的博客</h2><p>   <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo官网主题</a><br>   选一个你喜欢的主题点击名称进去，有很详细的教程教你怎么用，照着做就好了<br>   主题选好照着教程都把相应的配置好后，打开Hexo右键Git Bash 输入</p>
-<blockquote>
-<p>hexo g<br>hexo s</p>
-</blockquote>
-<p>   就可以在本地查看效果了，如果满意，打开Hexo右键Git Bash 输入</p>
-<blockquote>
-<p>hexo clean<br>hexo g -d</p>
-</blockquote>
-<p>   就将他部署到GitHub上了</p>
-<h2 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h2><p>  执行以下命令就可以在 Hexo\source_posts中生成 .md 文档，用编辑器打开就可以写自己的想写的了。</p>
-<blockquote>
-<p>hexo n “文章名称”</p>
-</blockquote>
-<p>   写完后,用以下命令就可以就可以发布到我们的GitHub仓库了</p>
-<blockquote>
-<p> hexo g<br> hexo d</p>
-</blockquote>
-<p>   因为写博客一般用的都是MarkDown,所以不太熟悉还是需要看下的<br>   <a href="https://sspai.com/post/25137" target="_blank" rel="noopener">Mrakdown入门指南</a></p>
+        <h3 id="React生命周期包含哪些"><a href="#React生命周期包含哪些" class="headerlink" title="React生命周期包含哪些"></a>React生命周期包含哪些</h3><h4 id="getDefaultProps"><a href="#getDefaultProps" class="headerlink" title="getDefaultProps"></a>getDefaultProps</h4><p>  对于每个组件实例来讲，这个方法只会调用一次，该组件类的所有后续应用，getDefaultPops<br>  将不会再被调用，其返回的对象可以用于设置默认的 props(properties的缩写) 值。</p>
+<h4 id="getInitialState"><a href="#getInitialState" class="headerlink" title="getInitialState"></a>getInitialState</h4><p> 对于组件的每个实例来说，这个方法的调用有且只有一次，用来初始化每个实例的 state，在这个方法里，可以访问组件的 props。每一个React组件都有自己的 state，<br> 其与 props 的区别在于 state只存在组件的内部，props 在所有实例中共享<br> getDefaultProps与getInitialState的区别<br>  getDefaultPops 是对于组件类来说只调用一次，后续该类的应用都不会被调用，<br>  而 getInitialState 是对于每个组件实例来讲都会调用，并且只调一次</p>
+<h4 id="componentWillMount"><a href="#componentWillMount" class="headerlink" title="componentWillMount"></a>componentWillMount</h4><p>  该方法在首次渲染之前调用，也是再 render 方法调用之前修改 state 的最后一次机会</p>
+<h4 id="render"><a href="#render" class="headerlink" title="render"></a>render</h4><p> render方法创建一个虚拟的DOM，用来表示组件的输出，对于一个组件来讲，render方法是唯一一个必须方法。</p>
+<h5 id="redner方法要满足："><a href="#redner方法要满足：" class="headerlink" title="redner方法要满足："></a>redner方法要满足：</h5><p> . 只要通过this.props和this.state访问数据，而且不能修改<br> . 可以返回null, false 或者任何React组件<br> . 只能出现一个顶级组件，不能返回一组元素<br> . 不能改变组件的状态<br> . 不能修改DOM的输出<br> render方法回来的结果并不是真正的DOM元素，而是一个虚拟的表现，类似于一个DOM tree的结构的对象。</p>
+<h4 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount"></a>componentDidMount</h4><p> 该方法不会在服务端被渲染的过程中调用。该方法被调用时，已经渲染出真实的 DOM，可以再该方法中通过 this.getDOMNode()访问到真实的 DOM(推荐使用 ReactDOM.findDOMNode())</p>
+<h4 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps"></a>componentWillReceiveProps</h4><p> 组件的props属性可以通过父组件来更改，这时候componentWillReceivePros将会被调用，这个时候可以在这个方法里使用this.setState更新state，以触发render方法重新渲染组件。</p>
+<h4 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate"></a>shouldComponentUpdate</h4><p> 如果你确定组件的 props 或者 state 的改变不需要重新渲染，可以通过在这个方法里通过返回 false 来阻止组件的重新渲染，返回false则不会执行 render 以及后面的 componentWillUpdate，componentDidUpdate 方法。</p>
+<h4 id="componentWillUpdate"><a href="#componentWillUpdate" class="headerlink" title="componentWillUpdate"></a>componentWillUpdate</h4><p>这个方法和 componentWillMount 类似，在组件接收到了新的 props 或者 state 即将进行重新渲染前，componentWillUpdate(object nextProps, object nextState) 会被调用，注意不要在此方面里再去更新 props 或者 state</p>
+<h4 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate"></a>componentDidUpdate</h4><p> 这个方法和 componentDidMount 类似，在组件重新被渲染之后，componentDidUpdate(object prevProps, object prevState) 会被调用。可以在这里访问并修改 DOM</p>
+<h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount"></a>componentWillUnmount</h4><p> 每当React使用完一个组件，这个组件必须从 DOM 中卸载后被销毁，此时 componentWillUnmout 会被执行，完成所有的清理和销毁工作，在 componentDidMount 中添加的任务都需要再该方法中撤销，如创建的定时器或事件监听器</p>
+<h3 id="一个React-组件的生命周期分为三个部分-实例化，存在期和销毁时。"><a href="#一个React-组件的生命周期分为三个部分-实例化，存在期和销毁时。" class="headerlink" title="一个React 组件的生命周期分为三个部分:实例化，存在期和销毁时。"></a>一个React 组件的生命周期分为三个部分:实例化，存在期和销毁时。</h3><h3 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h3><h5 id="当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法"><a href="#当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法" class="headerlink" title="当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法"></a>当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法</h5><ul>
+<li>getDefaultProps</li>
+<li>getInitialState</li>
+<li>componentWillMont</li>
+<li>render</li>
+<li>componentDidMount<h5 id="当组件在服务端被实例化，首次被创建时，会依次调用以下方法"><a href="#当组件在服务端被实例化，首次被创建时，会依次调用以下方法" class="headerlink" title="当组件在服务端被实例化，首次被创建时，会依次调用以下方法"></a>当组件在服务端被实例化，首次被创建时，会依次调用以下方法</h5></li>
+<li>getDefaultProps</li>
+<li>getInitialState</li>
+<li>componentWillMont</li>
+<li>render </li>
+<li>componentDidMount (不会在服务端被渲染的过程调用) <h5 id="每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法"><a href="#每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法" class="headerlink" title="每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法"></a>每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法</h5></li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>render</li>
+<li>componentDidUpdate<br>不要直接去修改this.state,通过this.setState去修改<h3 id="存在期"><a href="#存在期" class="headerlink" title="存在期"></a>存在期</h3><h5 id="此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用"><a href="#此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用" class="headerlink" title="此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用"></a>此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用</h5></li>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>render</li>
+<li>componentDidUpdate<h3 id="销毁时"><a href="#销毁时" class="headerlink" title="销毁时"></a>销毁时</h3><h5 id="当再次装载组建时，以下方法将会被调用："><a href="#当再次装载组建时，以下方法将会被调用：" class="headerlink" title="当再次装载组建时，以下方法将会被调用："></a>当再次装载组建时，以下方法将会被调用：</h5></li>
+<li>getInitialState</li>
+<li>componentWillMount</li>
+<li>render</li>
+<li>componentDidMount</li>
+</ul>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者: <a href="http://yoursite.com">Me</a>
-            <p>原文链接: <a href="http://yoursite.com/2018/06/15/用GitHub和Hexo搭建个人博客/">http://yoursite.com/2018/06/15/用GitHub和Hexo搭建个人博客/</a>
-            <p>发表日期: <a href="http://yoursite.com/2018/06/15/用GitHub和Hexo搭建个人博客/">June 15th 2018, 9:24:05</a>
+            <p>原文链接: <a href="http://yoursite.com/2018/08/31/react生命周期/">http://yoursite.com/2018/08/31/react生命周期/</a>
+            <p>发表日期: <a href="http://yoursite.com/2018/08/31/react生命周期/">August 31st 2018, 2:47:29</a>
             <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -473,17 +447,12 @@ height:20vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2018/06/28/时间格式转来转去/" title= 时间格式转来转去 >
-                    <div class="nextTitle">时间格式转来转去</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2018/06/13/hello-world/" title= Hello-me >
-                    <div class="prevTitle">Hello-me</div>
+                <a href= "/2018/08/31/react-基础知识/" title= create-react-app脚手架  >
+                    <div class="prevTitle">create-react-app脚手架 </div>
                 </a>
             
         </li>
@@ -590,7 +559,7 @@ top:20vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于GitHub："><span class="toc-number">1.0.1.</span> <span class="toc-text">关于GitHub：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关于Hexo："><span class="toc-number">1.0.2.</span> <span class="toc-text">关于Hexo：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装环境与工具："><span class="toc-number">2.</span> <span class="toc-text">安装环境与工具：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Git的基本操作"><span class="toc-number">2.0.1.</span> <span class="toc-text">Git的基本操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo安装"><span class="toc-number">2.0.2.</span> <span class="toc-text">Hexo安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo初始化配置"><span class="toc-number">2.0.3.</span> <span class="toc-text">Hexo初始化配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#登录GitHub账号新建仓库"><span class="toc-number">2.0.4.</span> <span class="toc-text">登录GitHub账号新建仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置SSH密钥"><span class="toc-number">2.0.5.</span> <span class="toc-text">配置SSH密钥</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#将本地的Hexo文件更新到Github的库中"><span class="toc-number">2.0.6.</span> <span class="toc-text">将本地的Hexo文件更新到Github的库中</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#美化自己的博客"><span class="toc-number">3.</span> <span class="toc-text">美化自己的博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布博客"><span class="toc-number">4.</span> <span class="toc-text">发布博客</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#React生命周期包含哪些"><span class="toc-number">1.</span> <span class="toc-text">React生命周期包含哪些</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#getDefaultProps"><span class="toc-number">1.1.</span> <span class="toc-text">getDefaultProps</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getInitialState"><span class="toc-number">1.2.</span> <span class="toc-text">getInitialState</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentWillMount"><span class="toc-number">1.3.</span> <span class="toc-text">componentWillMount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#render"><span class="toc-number">1.4.</span> <span class="toc-text">render</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#redner方法要满足："><span class="toc-number">1.4.1.</span> <span class="toc-text">redner方法要满足：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentDidMount"><span class="toc-number">1.5.</span> <span class="toc-text">componentDidMount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentWillReceiveProps"><span class="toc-number">1.6.</span> <span class="toc-text">componentWillReceiveProps</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shouldComponentUpdate"><span class="toc-number">1.7.</span> <span class="toc-text">shouldComponentUpdate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentWillUpdate"><span class="toc-number">1.8.</span> <span class="toc-text">componentWillUpdate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentDidUpdate"><span class="toc-number">1.9.</span> <span class="toc-text">componentDidUpdate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentWillUnmount"><span class="toc-number">1.10.</span> <span class="toc-text">componentWillUnmount</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一个React-组件的生命周期分为三个部分-实例化，存在期和销毁时。"><span class="toc-number">2.</span> <span class="toc-text">一个React 组件的生命周期分为三个部分:实例化，存在期和销毁时。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例化"><span class="toc-number">3.</span> <span class="toc-text">实例化</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法"><span class="toc-number">3.0.1.</span> <span class="toc-text">当组件在客户端被实例化，第一次被创建时候，会依次调用以下方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#当组件在服务端被实例化，首次被创建时，会依次调用以下方法"><span class="toc-number">3.0.2.</span> <span class="toc-text">当组件在服务端被实例化，首次被创建时，会依次调用以下方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法"><span class="toc-number">3.0.3.</span> <span class="toc-text">每次修改state，都会重新渲染组件，实例化后通过state更新组件，回依次调用以下方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#存在期"><span class="toc-number">4.</span> <span class="toc-text">存在期</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用"><span class="toc-number">4.0.1.</span> <span class="toc-text">此时组件已经渲染好并且用户可以与他进行交互，这时候会看到下面的方法会被调用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#销毁时"><span class="toc-number">5.</span> <span class="toc-text">销毁时</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#当再次装载组建时，以下方法将会被调用："><span class="toc-number">5.0.1.</span> <span class="toc-text">当再次装载组建时，以下方法将会被调用：</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
